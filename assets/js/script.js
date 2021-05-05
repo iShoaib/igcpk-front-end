@@ -59,3 +59,15 @@
 
 
 })(jQuery);
+
+function showNav() {
+	var element = document.getElementById("navbars");
+  	element.classList.toggle("d-block");
+}
+
+document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '.splide', {
+		type: 'loop',
+		autoplay: true
+	} ).mount();
+} );

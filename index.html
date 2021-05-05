@@ -24,6 +24,9 @@
 	<script defer src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<!-- Custom JS -->
 	<script defer src="assets/js/script.js"></script>
+	<!-- Splide JS Slider -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </head>
 <body>
 	
@@ -32,8 +35,8 @@
 			<div class="topbar bg-blue">
 				<div class="container-fluid">
 					<div class="row align-items-center">
-						<div class="col-sm-6">
-							<ul class="top-contact-list list-group list-group-horizontal">
+						<div class="col-12 col-md-6">
+							<ul class="top-contact-list list-group flex-column flex-sm-row justify-content-between justify-content-md-start align-items-center">
 								<li class="list-group-item p-0 bg-transparent border-0">
 									<a class="text-decoration-none text-white opacity-8 opacity-hover" href="mailto:info@igcpk.com"><i class="bi bi-envelope-fill"></i> info@igcpk.com</a>
 								</li>
@@ -42,7 +45,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-sm-6 text-sm-end">
+						<div class="col-md-6 text-sm-end d-none d-md-block">
 							<div class="topbar-serach d-inline-block position-relative">
 								<button type="button" class="btn py-2 text-white opacity-8 opacity-hover bg-transparent no-focus">
 									<i class="fas fa-search"></i>
@@ -86,7 +89,7 @@
 									<img src="assets/images/logo@2x.png" alt="Ibrahim Fibres Limited">
 								</a>
 
-								<button class="navbar-toggler p-0 border-0 color-blue no-focus" type="button">
+								<button onclick="showNav()" class="navbar-toggler p-0 border-0 color-blue no-focus" type="button">
 									<span class="navbar-toggler-icon"></span>
 								</button>
 
@@ -130,11 +133,67 @@
 	</header><!-- /header -->
 
 	<section class="slider-wrapper">
+		<div class="splide">
+			<div class="splide__track">
+				<ul class="splide__list h-550 w-100">
+					<li class="splide__slide">
+						<div class="h-100 w-100" style="background: url(./assets/images/slider/1.jpg); background-position: center; background-size: cover;">
+							<div class="d-flex flex-wrap flex-column justify-content-center p-50 align-items-center w-100 h-100 back-overlay">
+								<p class="text-white">We Will Continue To Strive</p>
+								<h3 class="fw-bold color-lgreen text-center">Excellence In All Spheres</h3>
+								<h3 class="fw-bold text-white text-center">Manufacture High Quality Products</h3>
+								<a href="#" class="learn-button bg-blue border-blue text-decoration-none mt-3">Learn More</a>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="h-100 w-100" style="background: url(./assets/images/slider/2.jpg); background-position: center; background-size: cover;">
+							<div class="d-flex flex-wrap flex-column justify-content-center p-50 align-items-center w-100 h-100 back-overlay">
+								<p class="text-white">We Will Continue To Strive</p>
+								<h3 class="fw-bold color-lgreen text-center">Excellence In All Spheres</h3>
+								<h3 class="fw-bold text-white text-center">Manufacture High Quality Products</h3>
+								<a href="#" class="learn-button bg-blue border-blue text-decoration-none mt-3">Learn More</a>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="h-100 w-100" style="background: url(./assets/images/slider/3.png); background-position: center; background-size: cover;">
+							<div class="d-flex flex-wrap flex-column justify-content-center p-50 align-items-center w-100 h-100 back-overlay">
+								<p class="text-white">We Will Continue To Strive</p>
+								<h3 class="fw-bold color-lgreen text-center">Excellence In All Spheres</h3>
+								<h3 class="fw-bold text-white text-center">Manufacture High Quality Products</h3>
+								<a href="#" class="learn-button bg-blue border-blue text-decoration-none mt-3">Learn More</a>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="h-100 w-100" style="background: url(./assets/images/slider/4.jpg); background-position: center; background-size: cover;">
+							<div class="d-flex flex-wrap flex-column justify-content-center p-50 align-items-center w-100 h-100 back-overlay">
+								<p class="text-white">We Will Continue To Strive</p>
+								<h3 class="fw-bold color-lgreen text-center">Excellence In All Spheres</h3>
+								<h3 class="fw-bold text-white text-center">Manufacture High Quality Products</h3>
+								<a href="#" class="learn-button bg-blue border-blue text-decoration-none mt-3">Learn More</a>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="h-100 w-100" style="background: url(./assets/images/slider/5.jpg); background-position: center; background-size: cover;">
+							<div class="d-flex flex-wrap flex-column justify-content-center p-50 align-items-center w-100 h-100 back-overlay">
+								<p class="text-white">We Will Continue To Strive</p>
+								<h3 class="fw-bold color-lgreen text-center">Excellence In All Spheres</h3>
+								<h3 class="fw-bold text-white text-center">Manufacture High Quality Products</h3>
+								<a href="#" class="learn-button bg-blue border-blue text-decoration-none mt-3">Learn More</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</section>
 
 	<main class="main">
 		
-		<section class="h-services pt-0">
+		<section class="h-services pt-0 -mt-20">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
@@ -252,13 +311,13 @@
 						</div>
 					</div>
 					<div class="col-md-8">
-						<div class="ceo-ms-wrap ps-4">
-							<h2>CEO Message</h2>
+						<div class="ceo-ms-wrap px-4">
+							<h2 class="text-center text-md-start">CEO Message</h2>
 							<div class="ceo-quote text-white">
 								<p>By carrying out business activities with customer centric focus and by attaining the confidence of our shareholders, customers and society, Ibrahim Fibres Limited aims to be a Company making a significant contribution to the national economy.</p>
 								<p>We will continue to strive for excellence in all spheres of our activities and to manufacture high quality products through the use of advanced technology in our business operations, be an attractive organization to work with and a reliable business partner.</p>
 							</div>
-							<div class="ceo-name text-end">
+							<div class="ceo-name text-center text-md-end">
 								<h3>Mohammad Naeem Mukhtar</h3>
 							</div>
 						</div>
@@ -491,6 +550,5 @@
 			</div>
 		</div>
 	</footer>
-
 </body>
 </html>

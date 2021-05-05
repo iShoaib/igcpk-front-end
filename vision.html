@@ -32,8 +32,8 @@
 			<div class="topbar bg-blue">
 				<div class="container-fluid">
 					<div class="row align-items-center">
-						<div class="col-sm-6">
-							<ul class="top-contact-list list-group list-group-horizontal">
+						<div class="col-12 col-md-6">
+							<ul class="top-contact-list list-group flex-column flex-sm-row justify-content-between justify-content-md-start align-items-center">
 								<li class="list-group-item p-0 bg-transparent border-0">
 									<a class="text-decoration-none text-white opacity-8 opacity-hover" href="mailto:info@igcpk.com"><i class="bi bi-envelope-fill"></i> info@igcpk.com</a>
 								</li>
@@ -42,7 +42,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-sm-6 text-sm-end">
+						<div class="col-md-6 text-sm-end d-none d-md-block">
 							<div class="topbar-serach d-inline-block position-relative">
 								<button type="button" class="btn py-2 text-white opacity-8 opacity-hover bg-transparent no-focus">
 									<i class="fas fa-search"></i>
@@ -86,14 +86,14 @@
 									<img src="assets/images/logo@2x.png" alt="Ibrahim Fibres Limited">
 								</a>
 
-								<button class="navbar-toggler p-0 border-0 color-blue no-focus" type="button">
+								<button onclick="showNav()" class="navbar-toggler p-0 border-0 color-blue no-focus" type="button">
 									<span class="navbar-toggler-icon"></span>
 								</button>
 
 								<div class="navbar-collapse" id="navbars">
 									<ul class="navbar-nav ms-auto">
 										<li class="nav-item">
-											<a class="nav-link" href="index.html">Home</a>
+											<a class="nav-link active" href="index.html">Home</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" href="#">Company</a>
@@ -149,8 +149,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="d-flex align-items-start">
-                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <div class="d-flex align-items-start flex-column flex-md-row">
+                            <div class="nav flex-column nav-pills me-3 custom-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <button class="nav-link active" id="v-pills-vision-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vision" type="button" role="tab" aria-controls="v-pills-vision" aria-selected="true">
                                     <svg class="icon-vision">
                                         <use xlink:href="#vision-icon"></use>
@@ -170,7 +170,7 @@
                                     <span>Core Values</span>
                                 </button>
                             </div>
-                            <div class="tab-content" id="v-pills-tabContent">
+                            <div class="custom tab-content" id="v-pills-tabContent">
                                 <div class="tab-pane fade show active" id="v-pills-vision" role="tabpanel" aria-labelledby="v-pills-vision-tab">
                                     <div class="aux-widget-modern-heading">
                                         <div class="aux-widget-inner">
